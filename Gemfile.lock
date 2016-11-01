@@ -202,6 +202,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma
+  rack-cors
   rails (= 5.0.0.1)
   redis
   sass-rails
