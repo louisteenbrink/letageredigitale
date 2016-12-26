@@ -16,4 +16,5 @@ class PagesController < ApplicationController
       format.js
     end
   end
+
 end

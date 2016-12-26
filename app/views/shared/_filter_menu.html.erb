@@ -1,0 +1,7 @@
+  <div class="filters">
+    <% @tags.each do |tag| %>
+    <div class="filter btn-medium">
+      <%= link_to "#{tag.name}", fetch_posts_path(:tag_id => tag.id), :remote => true %>
+    </div>
+    <% end %>
+  </div>
