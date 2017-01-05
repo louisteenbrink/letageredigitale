@@ -2,9 +2,9 @@
 <div class="container">
 
   <h1>L'étagère digitale</h1>
+
   <%= render 'shared/filter_menu' %>
 
-  <%= render partial: 'shared/post_grid', locals: { posts: @posts} %>
+  <%= render partial: 'shared/post_grid', posts: @posts %>
 
 </div>
-

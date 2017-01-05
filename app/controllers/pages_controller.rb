@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
 
-
   def home
     @posts = Post.all
     @tags = Tag.all
@@ -11,9 +10,9 @@ class PagesController < ApplicationController
   end
 
   def from_tag
-    @posts = Post.joins(:tags).where(tags: { id: params[:tag_id] })
-    respond_to do |format|
-      format.js
+    @selected = Post.joins(:tags).where(tags: { id: params[:tag_id] })
+      respond_to do |format|
+        format.js
     end
   end
 
